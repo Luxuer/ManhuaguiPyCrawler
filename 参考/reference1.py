@@ -65,7 +65,7 @@ def get_jpg(my_url,name):
         
 def get_chapters_url(re_link):  #獲得漫畫章節網址url
     chapter_link_list = {}
-    re_request = requests.get(re_link,headers = headers);
+    re_request = requests.get(re_link,headers = headers)
     if re_request.status_code != 200:
         print ('Get Re Manhua Page Failed')
         exit(1)

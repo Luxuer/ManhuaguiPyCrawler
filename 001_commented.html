@@ -1,0 +1,307 @@
+<!-- 
+在HTML文档初，往往会有这么一句话<!DOCTYPE html>，那么它的意义是什么呢？它是html5标准网页声明,全称为Document Type HyperText Mark-up Language，意思为文档种类为超文本标记性语言或超文本链接标示语言，现在是这个简洁形式，支持html5标准的主流浏览器都认识这个声明。表示网页采用html5，<!DOCTYPE> 声明位于文档中的最前面的位置，处于 <html> 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。
+作用：声明文档的解析类型(document.compatMode)，避免浏览器的怪异模式。 -->
+<!DOCTYPE html>
+<!-- 
+xmlns是xml namespace的缩写，也就是XML命名空间，xmlns属性可以在文档中定义一个或多个可供选择的命名空间。该属性可以放置在文档内任何元素的开始标签中。该属性的值类似于URL，它定义了一个命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容。
+用来标识命名空间的网络地址并不被XML解析器调用，XML解析器不需要从这个网络地址中查找信息，该网络地址的作用仅仅是给命名空间一个唯一的名字，因此这个网络地址也可以是虚拟的。 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        自杀岛第001回_自杀岛漫画 - 看漫画
+    </title>
+    <!-- 
+    meta是html中的元标签，其中包含了对应html的相关信息，客户端浏览器或服务器端的程序会根据这些信息进行处理。
+    content（内容类型）：重要！！这个网页的格式是文本的，网页模式
+    charset（编码）：特别重要！！！这个网页的编码是utf-8，中文编码，需要注意的是这个是网页内容的编码，而不是文件本身的，其他类型的编码中文可能会出现乱码。
+    HTTP-EQUIV类似于HTTP的头部协议，它回应给浏览器一些有用的信息，以帮助正确和精确地显示网页内容。
+    -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- 设置关键词, 让一些搜索引擎搜索到你的网页 -->
+    <meta content="第001回,自杀岛,森恒二,漫画,看漫画" name="keywords" />
+    <meta content="自杀岛第001回,在线看自杀岛漫画就在看漫画" name="Description" />
+
+    <link href="https://cf.hamreus.com/css/detail_D93C08824D515833A079840EC4152F97.css" rel="stylesheet"
+        type="text/css" />
+    <script src="https://cf.hamreus.com/scripts/config_FAF1BF617BAF8A691A828F80672D3588.js" type="text/javascript">
+    </script>
+    <!--[if IE 6]><script type="text/javascript">document.execCommand("BackgroundImageCache", false, true);</script><![endif]-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="w980">
+                <div class="search fr pr">
+                    <input id="txtKey" value="" />
+                    <button id="btnSend">
+                        搜索
+                    </button>
+                    <div class="sList shadow" id="sList">
+                    </div>
+                </div>
+                <span class="nav">
+                    <a class="logo" href="/" title="返回首页">
+                    </a>
+                    <a class="pr new-update" href="/update/">
+                        最新更新
+                        <i>
+                        </i>
+                    </a>
+                    <a href="/list/">
+                        漫画大全
+                    </a>
+                    <a href="/list/wanjie/">
+                        完结
+                    </a>
+                    <a href="/list/lianzai/">
+                        连载
+                    </a>
+                    <a href="/rank/">
+                        排行榜
+                    </a>
+                    <a href="/list/japan/">
+                        日本漫画
+                    </a>
+                </span>
+                <span class="more pr" id="nav-sec">
+                    <strong>
+                        更多类别
+                    </strong>
+                    <i>
+                    </i>
+                    <div class="content shadow nav-sec">
+                    </div>
+                </span>
+                <span class="more pr" id="history">
+                    <strong>
+                        我的浏览记录
+                    </strong>
+                    <i>
+                    </i>
+                    <div class="content shadow" id="hList">
+                        <span class="hNone">
+                            loading...
+                        </span>
+                    </div>
+                </span>
+                <span class="menu-end">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="w980 title">
+        <div class="fr">
+            <span class="lighter-close" id="lighter">
+                关灯
+            </span>
+        </div>
+        <div>
+            <h1>
+                <a href="/comic/4375/">
+                    自杀岛
+                </a>
+            </h1>
+            <em>
+                /
+            </em>
+            <h2>
+                第001回
+            </h2>
+            <em>
+                /
+            </em>
+            <span>
+                (
+                <span id="page">
+                </span>
+                /33)
+            </span>
+        </div>
+    </div>
+    <div class="w980 tc">
+        <div class="main-btn">
+            <a class="btn-red" href="#" id="viewList">
+                目录列表
+            </a>
+            <a class="btn-red prevC" href="#">
+                上一章
+            </a>
+            <a class="btn-red" href="javascript:void(0);" id="prev">
+                上一页
+            </a>
+            <select id="pageSelect">
+            </select>
+            <a class="btn-red" href="javascript:void(0);" id="next">
+                下一页
+            </a>
+            <a class="btn-red nextC" href="#">
+                下一章
+            </a>
+            <a class="btn-red" href="/comic/4375/#Comment" target="_blank">
+                我要评论
+            </a>
+        </div>
+    </div>
+    <div class="gg_980" style="margin:8px auto;">
+        <script async="async" data-cfasync="false" src="//native.propellerclick.com/1?z=2607313&amp;eid=">
+        </script>
+    </div>
+    <div class="w980 clearfix sub-btn">
+        <div class="servList fr" id="servList">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        线路→
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="fl support">
+            <ul>
+                <li class="pr" id="shortcuts">
+                    <a class="support-shortcuts" href="javascript:;">
+                        快捷键
+                    </a>
+                </li>
+                <li class="pr" id="qrcodes">
+                    <a class="qrcode" href="javascript:;" id="tool-qr">
+                        二维码
+                    </a>
+                </li>
+                <li>
+                    <a class="speed" href="javascript:;" id="tool-speed">
+                        极速
+                    </a>
+                </li>
+                <li class="pr" id="zoomtool">
+                    <a class="zoomin" href="javascript:;" id="tool-zoom">
+                        缩放
+                    </a>
+                </li>
+                <li>
+                    <a class="rotate" href="javascript:;" id="tool-rotate">
+                        旋转
+                    </a>
+                </li>
+                <li>
+                    <a class="crop" href="javascript:;" id="tool-crop">
+                        裁切
+                    </a>
+                </li>
+                <li>
+                    <a class="gray" href="javascript:;" id="tool-gray">
+                        滤镜
+                    </a>
+                </li>
+                <li>
+                    <a class="error" href="javascript:;" id="support-error">
+                        报错
+                    </a>
+                </li>
+                <li>
+                    <span class="pr arrow shareto">
+                        翻页→
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="fl pfList" id="share">
+        </div>
+    </div>
+    <div class="clearfix">
+        <table border="0" cellpadding="0" cellspacing="0" class="pr tbCenter cb">
+            <tr>
+                <td align="center" id="tbBox">
+                    <div class="img-loading" id="imgLoading">
+                        <i>
+                        </i>
+                        <span>
+                            图片努力加载中，请稍候
+                        </span>
+                    </div>
+                    <div align="center" id="mangaBox">
+                    </div>
+                    <div id="imgPreLoad">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cf.hamreus.com/scripts/core_C0683FDCDEE69940232A703BDEB0F64F.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        //   \x65\x76\x61\x6c就是eval
+        window["\x65\x76\x61\x6c"](function (p, a, c, k, e, d) {
+            e = function (c) {
+                // parseInt() 函数可解析一个字符串，并返回一个整数。
+                return (c < a ? "" : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) :
+                    c.toString(36))
+            };
+            if (!''.replace(/^/, String)) {
+                while (c--) d[e(c)] = k[c] || e(c);
+                k = [function (e) {
+                    return d[e]
+                }];
+                e = function () {
+                    return '\\w+'
+                };
+                c = 1;
+            };
+            while (c--)
+                if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+            return p;
+        }('p.o({"r":4,"q":"l","k":"4.n","m":s,"y":"x","B":["A.u.2","t.3.2","w.3.2","v.3.2","8.3.2","9.3.2","a.3.2","7.3.2","6.3.2","5.3.2","b.3.2","h.3.2","g.3.2","j.3.2","i.3.2","d.3.2","c.3.2","f.3.2","e.3.2","C.3.2","U.3.2","X.3.2","W.3.2","Z.3.2","Y.3.2","T.3.2","S.3.2","V.3.2","14.3.2","15.3.2","16.3.2","11.3.2","10.3.2"],"13":12,"H":I,"J":"/G/z/D/E/","F":1,"K":"","P":Q,"R":0,"O":{"L":"M"}}).N();',
+            62, 69,
+            'D7DuFMCMAdmg7A5sALAZgOwFZgAZcCcuAjLnrgBz4Hkb4Xkr47P4Bs5b+GepJxvLsR4ksJDiSrEaJOsQYkATCTS9SxRbybEWxNCRTAYASwDGwQFeBgAXNA2TrBTxgCbAAVtGTGAtogAiAQwAXP2AAZQBZAAkjeD9PcCMnYEwKbHI+TQApAAUAcXJ9XEN8ZVxVQBpvfGJAPbV7GLiQfEaBADNjABtwAGdeImVgAC1jEJ9gAEFTAIB9SuBOoICAV27oTs0O+CTVaECACyM2gHtTAGtJ03NPRxwAOQBpcH7jkMcXADcfAE8ASQB5EJ+ABoAGQAjgAPADCBwAinAAE7gL7wYwBWZtYDwcBggJfZzJDAcaAI164vCKLiKESKMTksnFAS4SmMhSKZSKVSM0isslMalk/SKIpoZRoDloUjC4DNPxtTrxVrIzo7cDOZmMmSKIj6PAFcVAA==' [
+                '\x73\x70\x6c\x69\x63'
+            ]('\x7c'), 0, {}))
+    </script>
+    <div class="gg_950" style="margin-bottom:8px">
+        <script src="https://jy.ggweb.net/ikanman/k1.js" type="text/javascript">
+        </script>
+    </div>
+    <div class="gg_950 jghf">
+        <script src="https://jy.ggweb.net/ikanman/k2.js" type="text/javascript">
+        </script>
+    </div>
+    <div class="w980 tc">
+        <div class="pager" id="pagination">
+        </div>
+    </div>
+    <div class="gg_950 jghf" style="margin-bottom:8px">
+        <script src="https://jy.ggweb.net/ikanman/k3.js" type="text/javascript">
+        </script>
+    </div>
+    <div class="ra-4x1" style="margin:0 auto 12px;">
+        <div id="rn_ad_native_odrv6">
+        </div>
+        <script src="//cdn.run-syndicate.com/sdk/v1/n.js">
+        </script>
+        <script>
+            NativeAd({
+                element_id: "rn_ad_native_odrv6",
+                spot: "82c11c748e1c40e0bf2b00e668522f86",
+                type: "label-under",
+                cols: 4,
+                rows: 1,
+                title: "",
+                titlePosition: "left",
+                adsByPosition: "right",
+            });
+        </script>
+    </div>
+    <div class="footer">
+        <div class="footer-main">
+            <div class="w980 tc">
+                自杀岛第001回来自网友分享和上传，以便漫画爱好者研究漫画技巧和构图方式，禁止任何形式的下载！若喜欢，请支持购买正版！
+                <script src="https://cf.hamreus.com/scripts/footer_EE1783C4CFFD259AF7CC9CB7DAC2602D.js"
+                    type="text/javascript">
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
