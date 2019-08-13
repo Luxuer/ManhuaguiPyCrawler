@@ -125,6 +125,7 @@ for i in range(chapter_num):
         else:
             driver.find_element_by_id("next").click() # 点下一页
 
+# 下面都是别人写的代码, 仅供参考
 # driver = webdriver.Chrome() # 打开浏览器
 # driver.get(url) # 浏览漫画第一页
 # driver.implicitly_wait(15)  #等待讀取完畢
