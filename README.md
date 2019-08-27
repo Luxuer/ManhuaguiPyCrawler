@@ -5,7 +5,7 @@
 - 编辑器: VS Code
 - 编程语言: Python3
 - Python第三方库: requests, selenium, bs4, lxml
-- 安装[Chrome](https://www.google.cn/intl/zh-CN/chrome/)和对应的[Chrome Driver](http://npm.taobao.org/mirrors/chromedriver/), 并把Chrome Driver的路径放在环境变量Path里, 后者具体可参考[如何快速下载、安装和配置chromedriver?](https://jingyan.baidu.com/article/f7ff0bfcdd89ed2e27bb1379.html)
+- 安装[Chrome](https://www.google.cn/intl/zh-CN/chrome/)和对应的[Chrome Driver](http://npm.taobao.org/mirrors/chromedriver/), 并把chromedriver.exe的路径放在环境变量Path里, 后者具体可参考[如何快速下载、安装和配置chromedriver?](https://jingyan.baidu.com/article/f7ff0bfcdd89ed2e27bb1379.html)
 ## 实现原理
 用Python+Selenium操作Chrome浏览器, 进行漫画网站的浏览, 按钮点击等, 从而将目标漫画一页一页地下载到本地. 
 ## 优点
